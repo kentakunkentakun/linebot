@@ -17,6 +17,6 @@
     foreach ($events as $event) {
         // メッセージを返信
         $response = $bot->replyMessage(
-            $event->getReplyToken(), new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($event->getText())  
+            $event->getReplyToken(), new \LINE\LINEBot\MessageBuilder\TextMessageBuilder("かいそ")  
         );
     }
