@@ -22,7 +22,7 @@
         $replyWord = $event->getText();
 
         //wikipediaからユーザーが入力した単語の情報を取得
-        //$wordSource = phpQuery::newDocumentFile('https://dictionary.goo.ne.jp/word/' . $replyWord);
+        $wordSource = phpQuery::newDocumentFile('https://dictionary.goo.ne.jp/word/' . $replyWord);
         $h1Text = $wordSource->find('h1')->text();
         $h1Yomi = $wordSource->find('h1')->find('.yomi')->text();
         $detailText = $wordSource->find('.meaning:first')->find('li')->find('p')->text();
