@@ -34,7 +34,7 @@
         $headerText->setWrap(true);
 
         // ②header用のBoxComponentBuilderを作成
-        $headerBox = new LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\BoxComponentBuilder('vertical', [$headerText]);　
+        $headerBox = new LINE\LINEBot\MessageBuilder\Flex\ComponentBuilder\BoxComponentBuilder('vertical', [$headerText]);
         $headerBox->setPaddingBottom("sm");
         $headerBox->setPaddingTop('xl');
 
